@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-print_alphabet_x10(void)
+int print_alphabet_x10(void)
 {
 	int a, b;
 
