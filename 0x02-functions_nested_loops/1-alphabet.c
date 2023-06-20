@@ -5,17 +5,13 @@
  *
  * Return: Always 0 (Success)
  */
-int print_alphabet_x10(void)
+void print_alphabet(void)
 {
-	int a, b;
+	char c;
 
-	for (a = 0; a <= 9; a++)
+	for (c = 'a' ; c <= 'z' ; c++)
 	{
-		for (b = 97; b <= 122; b++)
-		{
-			_putchar(b);
-		}
-	_putchar('\n');
+		_putchar(c);
 	}
-	return (0);
+	_putchar('\n');
 }
