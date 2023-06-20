@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -10,7 +11,7 @@ int main(void)
 
 	while (*h)
 	{
-		_putchar(*h);
+		putchar(*h);
 		h++;
 	}
 	return (0);

@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#insert <stdio.h>
 /**
  * main - Prints the alphabet 10 times.
  *
@@ -8,7 +7,6 @@
 void main(void)
 {
 	int a, b;
-
 	for (a = 0; a <= 9; a++)
 	{
 		for (b = 97; b <= 122; b++)
