@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
-*_isalpha - CHecks if a character is alphabetical
-*@c: character to be checked
-*Return: return 0 or 1
-*/
+ * _isalpha - Checks if a character is alphabetical.
+ * @c: The character to be verified.
+ *
+ * Return: 1 if the character is alphabetical, 0 otherwise.
+ */
 int _isalpha(int c)
 {
-  if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-    return (1);
-  
-  return (0);
-}
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+		return (1);
+
+	return (0);
+} 
