@@ -3,7 +3,7 @@
  * Auth: Brennan D Baraban
  */
 
-#include "main.h"
+#include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
 
