@@ -19,6 +19,3 @@ int pop_listint(listint_t **head)
 	free(phead);
 	return (result);
 }
-
-
-
