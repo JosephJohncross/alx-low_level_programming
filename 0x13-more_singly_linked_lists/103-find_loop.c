@@ -13,34 +13,30 @@
  * Return: If there is no loop - NULL.
  *         Otherwise - the address of the node where the loop starts.
  */
-listint_t *find_listint_loop(listint_t *head)
-{
-    listint_t *tortoise, *hare;
+listint_t * find_listint_loop(listint_t * head) {
+   listint_t * tortoise, * hare;
 
-    if (head == NULL || head->next == NULL)
-        return (NULL);
+   if (head == NULL || head -> next == NULL)
+      return (NULL);
 
-    tortoise = head->next;
-    hare = (head->next)->next;
+   tortoise = head -> next;
+   hare = (head -> next) -> next;
 
-    while (hare)
-    {
-        if (tortoise == hare)
-        {
-            tortoise = head;
+   while (hare) {
+      if (tortoise == hare) {
+         tortoise = head;
 
-            while (tortoise != hare)
-            {
-                tortoise = tortoise->next;
-                hare = hare->next;
-            }
+         while (tortoise != hare) {
+            tortoise = tortoise -> next;
+            hare = hare -> next;
+         }
 
-            return (tortoise);
-        }
+         return (tortoise);
+      }
 
-        tortoise = tortoise->next;
-        hare = (hare->next)->next;
-    }
+      tortoise = tortoise -> next;
+      hare = (hare -> next) -> next;
+   }
 
-    return (NULL);
+   return (NULL);
 }
