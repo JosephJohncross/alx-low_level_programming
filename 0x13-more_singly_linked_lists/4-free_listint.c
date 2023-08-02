@@ -1,21 +1,13 @@
 #include "lists.h"
+
 /**
- * free_listint - Free nodes and list
- * @head: This is my struct
+ * free_listint - frees all the node in a list.
+ * @head: pointer to a list.
  */
 void free_listint(listint_t *head)
 {
-
-	if (head == NULL)
-	{
+	if (!head)
 		return;
-	}
-	while (head != NULL)
-	{
-		listint_t *tmp;
-
-		tmp = head;
-		free(tmp);
-		head = head->next;
-	}
+	free_listint(head->next);
+	free(head);
 }
